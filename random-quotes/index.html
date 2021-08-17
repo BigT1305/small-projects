@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A random quote generator">
+  <meta name="keywords" content="html, css, javascript, api">
+  <meta name="author" content="Tony Hoss">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet"> 
+  <script src="script.js" defer></script>
+  <title>Random Quotes</title>
+  <!-- FONTAWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+  <!-- Container for the quote -->
+  <div class="container">
+    <!-- Quote will be displayed here -->
+    <h1>
+      <i class="fas fa-quote-left"></i>
+      <span class="quote" id="quote"></span>
+      <i class="fas fa-quote-right"></i>
+    </h1>
+    <!-- Author of the quote shows here -->
+    <p class="author" id="author"></p>
+
+    <hr />
+
+    <div class="buttons">
+      <!-- Click button to generate a new quote -->
+      <button onclick="getNewQuote()" class="next">Next Quote</button>
+    </div>
+  </div>  
+</body>
+</html>
